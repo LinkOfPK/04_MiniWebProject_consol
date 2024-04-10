@@ -19,24 +19,29 @@
          div{background-color: pink; margin: 20px; padding: 10px;}
          footer{ background-color: orange; border-radius:30px; padding:5px;}
          
-         form input[type="radio"],
-         form input[type="checkbox"],
-         form input[type="text"] {font-family: 'Nanum Pen Script', sans-serif; font-size: 1em;}
-         p{font-family: 'Nanum Pen Script', sans-serif; font-size: 2em;}
+         form span[id="grade"],
+         form span[id="gender"],
+         form input[type="text"],
+         form span[id="future"]{font-family: 'Nanum Pen Script', sans-serif; font-size: 1.5em;}
+         p, footer{font-family: 'Nanum Pen Script', sans-serif; font-size: 2em;}
     </style>
 </head>
 
 <body>
     <div>
-    <form>학년:
-        <input type="radio" name="1학년" value="1">1학년
-        <input type="radio" name="2학년" value="2">2학년
-        <input type="radio" name="3학년" value="3">3학년
-        <input type="radio" name="4학년" value="4">4학년
+    <form><span>학년:</span>
+        <span id="grade">
+        <input type="checkbox" name="grade" name="1학년" value="1">1학년
+        <input type="checkbox" name="grade" name="2학년" value="2">2학년
+        <input type="checkbox" name="grade" name="3학년" value="3">3학년
+        <input type="checkbox" name="grade" name="4학년" value="4">4학년
+        </span>
     </form><br>
-    <form>성별:
-        <input type="radio" name="남학생" value="1">남
-        <input type="radio" name="여학생" value="2">여
+    <form><span>성별:</span>
+        <span id="gender">
+        <input type="checkbox" name="남학생" value="1">남
+        <input type="checkbox" name="여학생" value="2">여
+        </span>
     </form><br>
 
     <form>
@@ -50,11 +55,13 @@
     </form><br>
 
     <form>
-        진로:
+        <span>진로:</span>
+        <span id="future">
         <input type="checkbox" value="1"checked>개발
         <input type="checkbox" value="2">기획
         <input type="checkbox" value="3">영업
         <input type="checkbox" value="4">창업
+        </span>
     </form><br>
 
     <form>
@@ -66,6 +73,6 @@
 </body>
 
 <footer>
-    Copyright 2024 by 2000881 Pakr JaeHong
+    Copyright 2024 by 2000881 Park JaeHong
 </footer>
 </html>
